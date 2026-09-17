@@ -1,0 +1,32 @@
+[project]
+name = "propertyops"
+version = "0.1.0"
+description = "AI agent harness for a property management company"
+readme = "README.md"
+authors = [
+    { name = "geborekmatt", email = "geborekmatt@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "alembic>=1.20.0",
+    "asyncpg>=0.31.0",
+    "fastapi[standard]>=0.141.1",
+    "mcp[cli]>=2.2.0",
+    "openai>=3.14.1",
+    "pgvector>=0.5.0",
+    "pwdlib[argon2]>=0.3.1",
+    "pydantic>=2,<3",
+    "pydantic-settings>=2.15.0",
+    "pyjwt>=2.14.0",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.0.1",
+    "sqlalchemy[asyncio]>=2,<3",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "ruff>=0.16.8",
+]
